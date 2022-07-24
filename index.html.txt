@@ -20,8 +20,11 @@ git config --list
 --> tells that new file is added or present files were modified or if the directory is under git or not
 git status
 
---> Takes the file to the staging area which will be commited further
+--> Takes all the file to the staging area which will be commited further
 git add --a
+
+--> Takes a specific file to the staging area
+git add <filename>
 
 --> Commiting the files -m is message ,  before commiting files should be added first 
 git commit -m "<commit message>"
@@ -39,7 +42,8 @@ git log
 
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 CLONING A PROJECT
 
 --> cloning git repository
@@ -58,3 +62,25 @@ IGNORING A FILE DURING COMMITING OR ADDING
  Example--> to ignore all .txt file add *.txt to .gitignore file.
 4.) add and commit the files. 
 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--> To see the diffrence between working directory and staged data
+git diff
+
+--> To compare staged data with last commit 
+git diff --staged	
+
+--> directly commiting files without adding or moving files from present working directory to repository
+git commit -a -m "<message>"
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+UNSTAGING AND UNMODIFYING FILES IN GIT
+
+--> To remove a file form staged position
+git restore --staged <file-name>
