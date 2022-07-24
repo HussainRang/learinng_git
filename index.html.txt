@@ -1,0 +1,6 @@
+git init --> to make a directory as git directory and git will start tracking changes in that directory
+
+--> For configuring global username and email for git 
+git config user.name "<user-name>"
+git config user.email "<user-email>"
+  
