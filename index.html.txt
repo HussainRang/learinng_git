@@ -1,14 +1,18 @@
 GIT works on 3 stages-->
 1.) Present working directory --> the directory on computer whuch is git directory and on which the project is worked on
 2.) Staging Area --> the area where the where the files are sent which are needed to be pushed on to the repository
-3.) Git repository --> The files are pushed here using commit command
+3.) Git repository --> The files are commited here using commit command
  
 
 git init --> to make a directory as git directory and git will start tracking changes in that directory
 
---> For configuring global username and email for git 
+--> For configuring username and email for git . Used for local configuration
 git config user.name "<user-name>"
 git config user.email "<user-email>"
+
+--> For global configuration
+git config --global user.name "<user-name>"
+git config --global user.email "<user-email>"
 
 --> To get the list and username and user email
 git config --list  
@@ -16,7 +20,7 @@ git config --list
 --> tells that new file is added or present files were modified or if the directory is under git or not
 git status
 
---> Takes the file to the staging area whihc will be pushed further
+--> Takes the file to the staging area which will be commited further
 git add --a
 
 --> Commiting the files -m is message ,  before commiting files should be added first 
@@ -32,3 +36,25 @@ clear
 
 --> shows all the commits made onthe directory
 git log
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+CLONING A PROJECT
+
+--> cloning git repository
+git clone <URL>
+
+--> to show all the files and folders in the directory
+ls
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+IGNORING A FILE DURING COMMITING OR ADDING
+
+1.) make a .gitignore file
+2.) Enter the filename to be ignored while pushing and to ignore a folder write <folder-name>/ in .gitignore file
+3.) To ignore all files of a particular extension write *.<file-extension> in .gitignore file 
+ Example--> to ignore all .txt file add *.txt to .gitignore file.
+4.) add and commit the files. 
+
