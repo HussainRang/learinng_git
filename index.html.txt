@@ -3,4 +3,20 @@ git init --> to make a directory as git directory and git will start tracking ch
 --> For configuring global username and email for git 
 git config user.name "<user-name>"
 git config user.email "<user-email>"
-  
+
+--> To get the list and username and user email
+git config --list  
+
+--> tells that new file is added or present files were modified or if the directory is under git or not
+git status
+
+--> Takes the file to the staging area whihc will be pushed further
+git add --a
+
+--> Commiting the files -m is message ,  before commiting files should be added first 
+git commit -m "<commit message>"
+Example--> git commit -m "First commit"
+
+--> Opens the present working directory in the vs code
+code .
+
