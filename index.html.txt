@@ -1,3 +1,9 @@
+GIT works on 3 stages-->
+1.) Present working directory --> the directory on computer whuch is git directory and on which the project is worked on
+2.) Staging Area --> the area where the where the files are sent which are needed to be pushed on to the repository
+3.) Git repository --> The files are pushed here using commit command
+ 
+
 git init --> to make a directory as git directory and git will start tracking changes in that directory
 
 --> For configuring global username and email for git 
@@ -20,3 +26,9 @@ Example--> git commit -m "First commit"
 --> Opens the present working directory in the vs code
 code .
 
+
+--> Clears the terminal
+clear
+
+--> shows all the commits made onthe directory
+git log
