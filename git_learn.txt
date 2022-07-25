@@ -84,3 +84,26 @@ UNSTAGING AND UNMODIFYING FILES IN GIT
 
 --> To remove a file form staged position
 git restore --staged <file-name>
+
+
+--> To get the file from staging area
+git restore <file-name>
+
+--> to get all the files from staging area 
+git restore .
+
+--> to get the file from last commit
+git checkout <file-name>
+
+--> to get all the files from the last commit
+git checkout -f
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--> When a file is renamed after commiting by a diffrent name in git then the git shows that the file was deleted and new file was formed
+    having the name as the renamed name.
+--> After adding the file git recognizes that the file was actually renamed and no files were deleted.	
+
+--> using mv command we can rename the file and the dit knows it without staging it
+git mv <current-file-name> <file-name-to-replace>
