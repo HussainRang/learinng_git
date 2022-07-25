@@ -103,7 +103,35 @@ git checkout -f
 
 --> When a file is renamed after commiting by a diffrent name in git then the git shows that the file was deleted and new file was formed
     having the name as the renamed name.
+
 --> After adding the file git recognizes that the file was actually renamed and no files were deleted.	
 
 --> using mv command we can rename the file and the dit knows it without staging it
 git mv <current-file-name> <file-name-to-replace>
+
+--> To remove a file
+git rm <file-name>
+
+--> To stop git from tracking a file which was being tracked previously
+git rm --cached <file-name>
+After running above code git status shows that the file is deleted.		
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+WORKING ON REMOTE REPOSITORY
+
+1.) MAKING NEW REPOSITORY by pressing + button on top left and then giving repository name.
+2.) -->Connecting a repository to local git
+git remote add origion <link>   
+3.) Generate an SSH key by searching at google to push the code to github
+
+
+
+
+
+
+
+
+
+
+
